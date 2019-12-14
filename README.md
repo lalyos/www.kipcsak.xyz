@@ -1,2 +1,0 @@
-# www.kipcsak.xyz
-todo
