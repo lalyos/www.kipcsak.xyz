@@ -1,3 +1,4 @@
+
 function getTextNodesIn(elem, opt_fnFilter) {
   var textNodes = [];
   if (elem) {
@@ -40,4 +41,14 @@ function replaceAllClass(classname) {
       kipcsakFunction(e)
     }
   }
+}
+
+var kipcsakFunction = kipcsak_hard
+
+for (h of ["h1","h2","h3","h4","h5"]) {
+  replaceAllTag(h)
+}
+
+for (cl of["ajanlo","oversized"]) {
+  replaceAllClass(cl)
 }
