@@ -1,40 +1,116 @@
-<h2>Kipcsakify</h2>
-<p>
-Weboldal helyesbito bookmark, a keleti nyitas jegyeben: atforditja a szoveget kipcsakra ...
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kipcsakify</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="kipcsak.js" > </script>
+  <script>
+    function translate() {
+      document.forms["translate"]["kipcsak"].value = document.forms["translate"]["magyar"].value.replace(/[eéií]/g,"ü").replace(/[EIÉÍ]/g,"Ü");
+    }
+  </script>
+</head>
+<body>
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button">Hüm</a>
+        <a href="#bookmark" class="w3-bar-item w3-button">Bükmark</a>
+        <a href="#fordito" class="w3-bar-item w3-button">Fordütü</a>
+        <a href="#about" class="w3-bar-item w3-button">Rólünk</a>
+      </div>
+    <div class="w3-container w3-teal">
+    <h2>Kipcsakify</h2>
+    </div>
+    <div class="w3-container ">
 
-<p>
-Meghogy finnugor nyelvcsalad?! Fodajunk hogy a kipcsakositott szoveget, minden nehezseg nelkul megerted.
-</p>
+    <p>
+    Weboldal helyesbito bookmark, a keleti nyitas jegyeben: atforditja a szoveget kipcsakra ...
+    </p>
+    
+    <p>
+    Meghogy finnugor nyelvcsalad?! Fodajunk hogy a kipcsakositott szoveget, minden nehezseg nelkul megerted.
+    </p>
+    
+    <ol>
+    <li>Vonszold ezt a bookmarkok koze:
+    <a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17952/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify</a>  
+      
+    <li> navigalj vmi hiroldalra: <a href="https://index.hu">index</a> <a href="https://444.hu">444</a> 
+    <li> kattints az kipcsakify bookmarkra
+      </ol>
+    
+    <h3>Kezdo Kipcsakoknak</h3>
+    
+    Ha elsore megsem ertened, akkor nincs eleg kipcsak ver az erediben,
+    De sebaj, gyakorolj a kezdo verzioval. Hasznaldd ezt a bookmarkot: 
+    <a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17951/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify-kezdo</a>  
+    
+    <h3>Halado Kipcsakoknak</h3>
+    
+    Ha igazan Kipcsak vagy probaldd ki ezt:
+    <a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17950/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify-halado</a>  
+  </div>
 
-<ol>
-<li>Vonszold ezt a bookmarkok koze:
-<a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17952/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify</a>  
-  
-<li> navigalj vmi hiroldalra: <a href="https://index.hu">index</a> <a href="https://444.hu">444</a> 
-<li> kattints az kipcsakify bookmarkra
-  </ol>
 
-<h3>Kezdo Kipcsakoknak</h3>
 
-Ha elsore megsem ertened, akkor nincs eleg kipcsak ver az erediben,
-De sebaj, gyakorolj a kezdo verzioval. Hasznaldd ezt a bookmarkot: 
-<a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17951/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify-kezdo</a>  
+    <div class="w3-container w3-teal">
+      <h2><a id="fordito">Fordito</a></h2>
+    </div>
+    Ha barmilyen szoveget szeretnel kipcsakra forditani:
+    
+    <form id="translate" class="w3-container w3-row-padding">
+      <div class="w3-third">
+        <label class="w3-text-teal"><b>magyar</b></label>
+        <textarea class="w3-input w3-border" name="magyar" cols="30" rows="10"></textarea>
+      </div>
+      <div class="w3-third w3-container ">
+        <p>
+          <a class="w3-button w3-black" href="javascript:translate();">Fordit »</a>
+        </p>
+        <div class="w3-hide">
+          <p>
+          <input class="w3-radio" type="radio" name="level" value="light">
+          <label>kezdo</label>
+        </p>
+        <p>
+          <input class="w3-radio" type="radio" name="level" value="medium" checked>
+          <label>kozephalado</label>
+        </p>
+        <p>
+          <input class="w3-radio" type="radio" name="level" value="hard">
+          <label>halado</label>
+        </p>
+      </div>
 
-<h3>Halado Kipcsakoknak</h3>
+      </div>
+      <div class="w3-third">
+        <label class="w3-text-teal"><b>kipcsak</b></label>
+        <textarea class="w3-input w3-border" name="kipcsak" cols="30" rows="10"></textarea>
 
-Ha igazan Kipcsak vagy probaldd ki ezt:
-<a id="thelink" href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/17950/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">kipcsakify-halado</a>  
+      </div>
+      </form>
 
-<h4>Chrome extension</h4>
-Elkeszult a hianypotlo munkatars ugrato chrome extension verzioja is,
-de egyelore a google rejektalta ... Meg probalkozok megfelelni a poliszinek.
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154577734-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <div class="w3-container w3-teal">
+        <h3><a id="chrome">Chrome extension</a></h3>
+    </div>
+    <div class="w3-container">
+    Elkeszult a hianypotlo munkatars ugrato chrome extension verzioja is,
+    de egyelore a google rejektalta ... Meg probalkozok megfelelni a poliszinek.
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154577734-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-154577734-1');
+    </script>
+    
+    <footer class="w3-container w3-black">
+      (K)Kopiralyt 2019. Kipcsak Norisz
+    </footer>
+</body>
+</html>
 
-  gtag('config', 'UA-154577734-1');
-</script>
+
