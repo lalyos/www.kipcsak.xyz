@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kipcsakified index</title>
+  <script src="kipcsak.js"> </script>
+</head>
+<body>
+  <h2>Kipcsakified index.hu</h2>
+  <button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var iframe = document.getElementById("myFrame");
+  var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+  elmnt.style.display = "none";
+}
+</script>
+
+  <iframe id="myFrame" src="http://index.kipcsak.xyz" width="100%" height="800px">
+
+  </iframe>
+</body>
+</html>
